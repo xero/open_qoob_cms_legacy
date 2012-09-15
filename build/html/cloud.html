@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tag Cloud Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Custom Diff Utility" href="custom_diff.html" />
+    <link rel="prev" title="Calendar Utility" href="calendar.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="custom_diff.html" title="Custom Diff Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="calendar.html" title="Calendar Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="tag-cloud-utility">
+<h1>Tag Cloud Utility<a class="headerlink" href="#tag-cloud-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="cloud">
+<em class="property">class </em><tt class="descname">cloud</tt><a class="headerlink" href="#cloud" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>tag cloud
+takes an array of tags (tag_id, name, url, tag_count)
+and generates an html tag cloud from them.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">1.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">utils</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="cloud::setMax">
+<tt class="descname">setMax</tt><big>(</big><big>)</big><a class="headerlink" href="#cloud::setMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>set maximun font size</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$max</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cloud::setMin">
+<tt class="descname">setMin</tt><big>(</big><big>)</big><a class="headerlink" href="#cloud::setMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>set minimum font size</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$min</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cloud::generate">
+<tt class="descname">generate</tt><big>(</big><big>)</big><a class="headerlink" href="#cloud::generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate function
+returns the html tag cloud from an array.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$tags</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="cloud::make">
+<tt class="descname">make</tt><big>(</big><big>)</big><a class="headerlink" href="#cloud::make" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="calendar.html"
+                        title="previous chapter">Calendar Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="custom_diff.html"
+                        title="next chapter">Custom Diff Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="custom_diff.html" title="Custom Diff Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="calendar.html" title="Calendar Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

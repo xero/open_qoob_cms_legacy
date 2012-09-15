@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Lorem Ipsum Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="pChart Utility" href="pChart.html" />
+    <link rel="prev" title="Inflector Utility" href="inflector.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pChart.html" title="pChart Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="inflector.html" title="Inflector Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="lorem-ipsum-utility">
+<h1>Lorem Ipsum Utility<a class="headerlink" href="#lorem-ipsum-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="loremIpsum">
+<em class="property">class </em><tt class="descname">loremIpsum</tt><a class="headerlink" href="#loremIpsum" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>loremIpsum
+Lorem Ipsum is non-sense, placeholder text used in publishing and design.
+It allows the developer to see their work completely populated with text,
+without having to actually create the text.</p>
+<p>generates content in three modes: plain, HTML (content blocks nested in &lt;p&gt; tags),
+and text (plain text in paragraph form). sentences are punctuated and vary in length
+based on statistics collected here: <a class="reference external" href="http://hearle.nahoo.net/Academic/Maths/Sentence.html">http://hearle.nahoo.net/Academic/Maths/Sentence.html</a>.
+sentence length will vary on a Guassian distribution. HTML output is &#8216;clean-code&#8217;
+formatted with tabs and new lines rather than just blobs of code.</p>
+<p>released open-source under the BSD License
+see &lt;<a class="reference external" href="http://opensource.org/licenses/bsd-license.php">http://opensource.org/licenses/bsd-license.php</a>&gt;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Mathew Tinsley <a class="reference external" href="http://tinsology.net/scripts/php-lorem-ipsum-generator/">http://tinsology.net/scripts/php-lorem-ipsum-generator/</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">version:</th><td class="field-body">1.0</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subpackage:</th><td class="field-body">utils</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">category:</th><td class="field-body">place $older</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="loremIpsum::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#loremIpsum::__construct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="loremIpsum::getContent">
+<tt class="descname">getContent</tt><big>(</big><big>)</big><a class="headerlink" href="#loremIpsum::getContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>get content function
+returns the desired amount of content as a string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$count</strong> (<em>int</em>) &#8211; word count</li>
+<li><strong>$format</strong> (<em>string</em>) &#8211; the return type (html, txt, or plain)</li>
+<li><strong>$loremipsum</strong> (<em>boolean</em>) &#8211; if true, start the text with lorem ipsum</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed $tring|html</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="inflector.html"
+                        title="previous chapter">Inflector Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="pChart.html"
+                        title="next chapter">pChart Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pChart.html" title="pChart Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="inflector.html" title="Inflector Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

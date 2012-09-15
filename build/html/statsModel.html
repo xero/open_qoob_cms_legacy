@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Statistics Model &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="App Config Controller" href="config.html" />
+    <link rel="prev" title="Search Model" href="searchModel.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="config.html" title="App Config Controller"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="searchModel.html" title="Search Model"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="statistics-model">
+<h1>Statistics Model<a class="headerlink" href="#statistics-model" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="statsModel">
+<em class="property">class </em><tt class="descname">statsModel</tt><a class="headerlink" href="#statsModel" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>stats model
+SQL functions for statistical analysis</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">2.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">app</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">models</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="statsModel::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+set the database type to mySQL</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::save">
+<tt class="descname">save</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::save" title="Permalink to this definition">¶</a></dt>
+<dd><p>save function
+insert the statistics into the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$stats</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::browsers">
+<tt class="descname">browsers</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::browsers" title="Permalink to this definition">¶</a></dt>
+<dd><p>browsers
+retrieve statistics about users browsers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::platforms">
+<tt class="descname">platforms</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::platforms" title="Permalink to this definition">¶</a></dt>
+<dd><p>platforms
+retrieve statistics about users opertating system platforms</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::resolutions">
+<tt class="descname">resolutions</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::resolutions" title="Permalink to this definition">¶</a></dt>
+<dd><p>resolutuions
+retrieve statistics about screen resolutions</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::resolutions_count">
+<tt class="descname">resolutions_count</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::resolutions_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>resolutions count
+retrieve a count of the statistics about screen resolutions</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::flash">
+<tt class="descname">flash</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::flash" title="Permalink to this definition">¶</a></dt>
+<dd><p>flash
+retrieve statistics about users flash plugin version</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::visits">
+<tt class="descname">visits</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::visits" title="Permalink to this definition">¶</a></dt>
+<dd><p>visits
+retrieve a count of the statistics about visits</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::visits_div">
+<tt class="descname">visits_div</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::visits_div" title="Permalink to this definition">¶</a></dt>
+<dd><p>visits
+retrieve statistics about visits</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::location">
+<tt class="descname">location</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::location" title="Permalink to this definition">¶</a></dt>
+<dd><p>location
+retrieve statistics about users location</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::resource">
+<tt class="descname">resource</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::resource" title="Permalink to this definition">¶</a></dt>
+<dd><p>resource
+retrieve statistics about users browsers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+<li><strong>$limit</strong> (<em>int</em>) &#8211; number of results</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::referrers">
+<tt class="descname">referrers</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::referrers" title="Permalink to this definition">¶</a></dt>
+<dd><p>referrers
+retrieve statistics about referring sites</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+<li><strong>$limit</strong> (<em>int</em>) &#8211; number of results</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="statsModel::searches">
+<tt class="descname">searches</tt><big>(</big><big>)</big><a class="headerlink" href="#statsModel::searches" title="Permalink to this definition">¶</a></dt>
+<dd><p>searches
+retrieve statistics about referring search engines</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$start</strong> (<em>int</em>) &#8211; starting date</li>
+<li><strong>$end</strong> (<em>int</em>) &#8211; ending date</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="searchModel.html"
+                        title="previous chapter">Search Model</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="config.html"
+                        title="next chapter">App Config Controller</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="config.html" title="App Config Controller"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="searchModel.html" title="Search Model"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

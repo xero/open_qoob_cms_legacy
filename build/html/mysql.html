@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>MySQL Core Class &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Open QOOB Core Class" href="open_qoob.html" />
+    <link rel="prev" title="Model Core Class" href="model.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="open_qoob.html" title="Open QOOB Core Class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="model.html" title="Model Core Class"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="mysql-core-class">
+<h1>MySQL Core Class<a class="headerlink" href="#mysql-core-class" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dbException">
+<em class="property">class </em><tt class="descname">dbException</tt><a class="headerlink" href="#dbException" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>the error messages thrown from the main mysql class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">0.5</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">core.data</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="dbException::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#dbException::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+sets the error code and messag</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$message</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$code</strong> (<em>int</em>) &#8211; 500</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mySQL">
+<em class="property">class </em><tt class="descname">mySQL</tt><a class="headerlink" href="#mySQL" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>the main database class (used as a singleton) containing connection variables, open/close routines, query generation/cleaning/execution and auto-id retrieval</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">2.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">core.data</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="attr">
+<dt id="mySQL::$$db">
+<em class="property">property </em><tt class="descname">$db</tt><a class="headerlink" href="#mySQL::$$db" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">object $db the database reference</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="mySQL::$$instance">
+<em class="property">property </em><tt class="descname">$instance</tt><a class="headerlink" href="#mySQL::$$instance" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">object $instance the singleton instance of the mySQL class</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="mySQL::$$sql">
+<em class="property">property </em><tt class="descname">$sql</tt><a class="headerlink" href="#mySQL::$$sql" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">string $sql the sql query</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::getInstance">
+<tt class="descname">getInstance</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::getInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>getInstance
+singleton pattern for instantiating the DB class</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">mySQL</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+calls the init and connect functions</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::init" title="Permalink to this definition">¶</a></dt>
+<dd><p>initilizer
+sets up database connection varibles from the config file</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::connect">
+<tt class="descname">connect</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>connect
+creates the mySQL database connection and selects the
+appropriate table. throws a dbException on failure.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::sanitize">
+<tt class="descname">sanitize</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::sanitize" title="Permalink to this definition">¶</a></dt>
+<dd><p>sanitizing
+simple method for injection attack protection</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::escape">
+<tt class="descname">escape</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::escape" title="Permalink to this definition">¶</a></dt>
+<dd><p>escape
+simple method for injection attack protection which
+replaces any non-ascii character with its hex code.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::query">
+<tt class="descname">query</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::query" title="Permalink to this definition">¶</a></dt>
+<dd><p>SQL query function
+executes a mySQL query.
+make sure all insert, and update statements have
+the results flag set to false.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$statement</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$results</strong> (<em>boolean</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">object|boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::makeQuery">
+<tt class="descname">makeQuery</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::makeQuery" title="Permalink to this definition">¶</a></dt>
+<dd><p>SQL query generation function
+pass this function a stored procedure and an array of parameters
+in name values pairs to replace in the spored procedure.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$sp</strong> (<em>string</em>) &#8211; stored procedure</li>
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::insertID">
+<tt class="descname">insertID</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::insertID" title="Permalink to this definition">¶</a></dt>
+<dd><p>get insertID
+used to get the last inserted record&#8217;s id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">int|string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQL::__destruct">
+<tt class="descname">__destruct</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQL::__destruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>destructor
+close the connection when finished</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="mySQLquery">
+<em class="property">class </em><tt class="descname">mySQLquery</tt><a class="headerlink" href="#mySQLquery" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>a class that formats the database results into php arrays.
+result[&#8220;row_id&#8221;][&#8220;column_name&#8221;]</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">1.01</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">core.data</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="attr">
+<dt id="mySQLquery::$$result">
+<em class="property">property </em><tt class="descname">$result</tt><a class="headerlink" href="#mySQLquery::$$result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="mySQLquery::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQLquery::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+gets the results of the mySQL query
+or throws a dbException error.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$query</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$link</strong> (<em>object</em>) &#8211; mysql_connection</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQLquery::result">
+<tt class="descname">result</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQLquery::result" title="Permalink to this definition">¶</a></dt>
+<dd><p>get result
+returns the results of the mySQL query</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQLquery::num_rows">
+<tt class="descname">num_rows</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQLquery::num_rows" title="Permalink to this definition">¶</a></dt>
+<dd><p>number of rows
+returns the number of rows in a given result</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="mySQLquery::__destruct">
+<tt class="descname">__destruct</tt><big>(</big><big>)</big><a class="headerlink" href="#mySQLquery::__destruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>destructor
+call&#8217;s free result only if result has be used</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="model.html"
+                        title="previous chapter">Model Core Class</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="open_qoob.html"
+                        title="next chapter">Open QOOB Core Class</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="open_qoob.html" title="Open QOOB Core Class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="model.html" title="Model Core Class"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

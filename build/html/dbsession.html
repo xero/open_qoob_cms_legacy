@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Database Session Core Class &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Epic Fail Core Class" href="epic_fail.html" />
+    <link rel="prev" title="Cookie Core Class" href="cookie.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="epic_fail.html" title="Epic Fail Core Class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="cookie.html" title="Cookie Core Class"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="database-session-core-class">
+<h1>Database Session Core Class<a class="headerlink" href="#database-session-core-class" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dbsession">
+<em class="property">class </em><tt class="descname">dbsession</tt><a class="headerlink" href="#dbsession" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>database session class
+used to manipulate session data, but saved in the database.
+why? for added security and use across domains.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">2.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">core.users</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="dbsession::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+the magic method that starts the session (if necessary).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::regenerate">
+<tt class="descname">regenerate</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::regenerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>regenerator
+creates a new random session id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Todo :</th><td class="field-body">should this also reset the expiration???</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::open">
+<tt class="descname">open</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::open" title="Permalink to this definition">¶</a></dt>
+<dd><p>open function
+load the session model</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::close">
+<tt class="descname">close</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::close" title="Permalink to this definition">¶</a></dt>
+<dd><p>close function
+does nothing???</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::read">
+<tt class="descname">read</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::read" title="Permalink to this definition">¶</a></dt>
+<dd><p>read function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$session_id</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::write">
+<tt class="descname">write</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::write" title="Permalink to this definition">¶</a></dt>
+<dd><p>write function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$session_id</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$session_data</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::destroy">
+<tt class="descname">destroy</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::destroy" title="Permalink to this definition">¶</a></dt>
+<dd><p>destroy function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$session_id</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::clean">
+<tt class="descname">clean</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>garbage collection</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$maxlifetime</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::countUsers">
+<tt class="descname">countUsers</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::countUsers" title="Permalink to this definition">¶</a></dt>
+<dd><p>count the users currently online</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::fingerprinting">
+<tt class="descname">fingerprinting</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::fingerprinting" title="Permalink to this definition">¶</a></dt>
+<dd><p>fingerprinting
+creates an MD5 fingerprint of the user.
+based on user-agent, the first 2 blocks
+of the ip address, the current session id,
+and a user defined salt.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::randomHash">
+<tt class="descname">randomHash</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::randomHash" title="Permalink to this definition">¶</a></dt>
+<dd><p>random hash
+generates a random MD5 hash.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbsession::validate">
+<tt class="descname">validate</tt><big>(</big><big>)</big><a class="headerlink" href="#dbsession::validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>validation
+checks if a users session fingerprint matches
+a newly generated fingerprint.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cookie.html"
+                        title="previous chapter">Cookie Core Class</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="epic_fail.html"
+                        title="next chapter">Epic Fail Core Class</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="epic_fail.html" title="Epic Fail Core Class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="cookie.html" title="Cookie Core Class"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1072 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Admin Model &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Blog Model" href="blogModel.html" />
+    <link rel="prev" title="URL Controller" href="url.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="blogModel.html" title="Blog Model"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="url.html" title="URL Controller"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="admin-model">
+<h1>Admin Model<a class="headerlink" href="#admin-model" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="adminModel">
+<em class="property">class </em><tt class="descname">adminModel</tt><a class="headerlink" href="#adminModel" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>admin model
+SQL functions for adding information to the database from the backend.
+functions for adding, modifying, and deleting records for administrators,
+pages, blogs, code, and galleries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">7.2</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">app</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">models</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="adminModel::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor function
+sets the database adapter type to mySQL.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkUser">
+<tt class="descname">checkUser</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkUser" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks a submitted username and password against the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$username</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkAdmin">
+<tt class="descname">checkAdmin</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks an email against the admin table of the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$email</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addAdmin">
+<tt class="descname">addAdmin</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds an administrator to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getAllAdmins">
+<tt class="descname">getAllAdmins</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getAllAdmins" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all admins</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getAdminByID">
+<tt class="descname">getAdminByID</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getAdminByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns an admin by ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::modAdmin">
+<tt class="descname">modAdmin</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::modAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>modify the properties of an admin</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::deleteAdmin">
+<tt class="descname">deleteAdmin</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::deleteAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete an admin by ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkPageRoute">
+<tt class="descname">checkPageRoute</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkPageRoute" title="Permalink to this definition">¶</a></dt>
+<dd><p>check to see if a route for a page url is used or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkPageRouteChange">
+<tt class="descname">checkPageRouteChange</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkPageRouteChange" title="Permalink to this definition">¶</a></dt>
+<dd><p>check to see if a page url has change during page modification</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean $rue = url change / false = no change</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getPageRouteIDs">
+<tt class="descname">getPageRouteIDs</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getPageRouteIDs" title="Permalink to this definition">¶</a></dt>
+<dd><p>get page and route ids.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getPages">
+<tt class="descname">getPages</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getPages" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all pages id and url fields.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getPage">
+<tt class="descname">getPage</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a single page from the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addPage">
+<tt class="descname">addPage</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a page and a route to the page to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::modPage">
+<tt class="descname">modPage</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::modPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>modify a page and it&#8217;s route to the page to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delPage">
+<tt class="descname">delPage</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes a page and a route from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getBlogByID">
+<tt class="descname">getBlogByID</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getBlogByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a blog post by id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getAllBlogPosts">
+<tt class="descname">getAllBlogPosts</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getAllBlogPosts" title="Permalink to this definition">¶</a></dt>
+<dd><p>return all blog posts</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkBlogRoute">
+<tt class="descname">checkBlogRoute</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkBlogRoute" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if a blog url is used or not</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean $alse is url is used</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addBlogCategory">
+<tt class="descname">addBlogCategory</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addBlogCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds a blog category to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$parent</strong> (<em>number</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getBlogCategories">
+<tt class="descname">getBlogCategories</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getBlogCategories" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all blog categories</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkBlogCategory">
+<tt class="descname">checkBlogCategory</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkBlogCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if a blog category name or url already exist</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addBlogTag">
+<tt class="descname">addBlogTag</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addBlogTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a new blog tag to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkBlogTag">
+<tt class="descname">checkBlogTag</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkBlogTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if a blog tag name or url already exist</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getBlogTags">
+<tt class="descname">getBlogTags</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getBlogTags" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all blog tags</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addBlogPost">
+<tt class="descname">addBlogPost</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addBlogPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a blog post to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$subtitle</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$excerpt</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$body</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$epoch</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$live</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">int $id</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::modBlogPost">
+<tt class="descname">modBlogPost</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::modBlogPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>modify a blog post int the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$post_id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$subtitle</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$excerpt</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$body</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$epoch</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$live</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">int $id</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delBlogPost">
+<tt class="descname">delBlogPost</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delBlogPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete blog post from the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addBlogMeta">
+<tt class="descname">addBlogMeta</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addBlogMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>add blog meta data to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$key</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$val</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delBlogMeta">
+<tt class="descname">delBlogMeta</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delBlogMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete blog meta data to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$key</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$val</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getBlogAndMetaByID">
+<tt class="descname">getBlogAndMetaByID</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getBlogAndMetaByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a blog post and it&#8217;s meta by id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getGalleryCategories">
+<tt class="descname">getGalleryCategories</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getGalleryCategories" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns all gallery categories</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getGalleryCatByID">
+<tt class="descname">getGalleryCatByID</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getGalleryCatByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a gallery category by id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkGalleryCategory">
+<tt class="descname">checkGalleryCategory</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkGalleryCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if a gallery category name or url already exists</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addGalleryCategory">
+<tt class="descname">addGalleryCategory</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addGalleryCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds a gallery category to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$parent</strong> (<em>number</em>) &#8211; </li>
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$excerpt</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$description</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$live</strong> (<em>number</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::modGalleryCategory">
+<tt class="descname">modGalleryCategory</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::modGalleryCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>modify a gallery category in the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>number</em>) &#8211; </li>
+<li><strong>$parent</strong> (<em>number</em>) &#8211; </li>
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$excerpt</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$description</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$live</strong> (<em>number</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkGalleryImg">
+<tt class="descname">checkGalleryImg</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkGalleryImg" title="Permalink to this definition">¶</a></dt>
+<dd><p>check if a gallery image url already exists</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addGalleryImg">
+<tt class="descname">addGalleryImg</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addGalleryImg" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds a gallery image to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$filename</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$subtitle</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$excerpt</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$description</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$live</strong> (<em>number</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addGalleryImgMeta">
+<tt class="descname">addGalleryImgMeta</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addGalleryImgMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>add gallery image meta data to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$key</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$val</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getGalleryImgByCat">
+<tt class="descname">getGalleryImgByCat</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getGalleryImgByCat" title="Permalink to this definition">¶</a></dt>
+<dd><p>get gallery images by category id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getGalleryImgAndMetaByID">
+<tt class="descname">getGalleryImgAndMetaByID</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getGalleryImgAndMetaByID" title="Permalink to this definition">¶</a></dt>
+<dd><p>get gallery image and metadata by id</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::modGalleryImg">
+<tt class="descname">modGalleryImg</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::modGalleryImg" title="Permalink to this definition">¶</a></dt>
+<dd><p>modify a gallery image in the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$subtitle</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$excerpt</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$description</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$live</strong> (<em>number</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delGalleryImg">
+<tt class="descname">delGalleryImg</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delGalleryImg" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete gallery image from the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delGalleryImgMeta">
+<tt class="descname">delGalleryImgMeta</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delGalleryImgMeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete gallery image meta data from the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$key</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$val</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getGalleryImgCount">
+<tt class="descname">getGalleryImgCount</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getGalleryImgCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>get a count of images in a given gallery category</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getSubGalleryCount">
+<tt class="descname">getSubGalleryCount</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getSubGalleryCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>get a count of subgalleries for a given gallery category</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delGalleryAndImgs">
+<tt class="descname">delGalleryAndImgs</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delGalleryAndImgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes a category from the database. if the second parameter is 1
+the images in that category will be deleted. if the parameter is 0
+the images will become uncategorized.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$id</strong> (<em>int|float</em>) &#8211; gallery_id</li>
+<li><strong>$delete</strong> (<em>int</em>) &#8211; boolean</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array $ist of file names</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::checkCodeRoute">
+<tt class="descname">checkCodeRoute</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::checkCodeRoute" title="Permalink to this definition">¶</a></dt>
+<dd><p>check to see if a url route for code is used or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$url</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::addCode">
+<tt class="descname">addCode</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::addCode" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a git repo to the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getCodes">
+<tt class="descname">getCodes</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getCodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>return all repos</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::getCode">
+<tt class="descname">getCode</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::getCode" title="Permalink to this definition">¶</a></dt>
+<dd><p>return all repos</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::modCode">
+<tt class="descname">modCode</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::modCode" title="Permalink to this definition">¶</a></dt>
+<dd><p>modify a git repo in the database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="adminModel::delCode">
+<tt class="descname">delCode</tt><big>(</big><big>)</big><a class="headerlink" href="#adminModel::delCode" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes a git repo from the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$id</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="url.html"
+                        title="previous chapter">URL Controller</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="blogModel.html"
+                        title="next chapter">Blog Model</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="blogModel.html" title="Blog Model"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="url.html" title="URL Controller"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

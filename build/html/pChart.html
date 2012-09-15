@@ -1,0 +1,881 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pChart Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Paging Utility" href="paging.html" />
+    <link rel="prev" title="Lorem Ipsum Utility" href="loremIpsum.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="paging.html" title="Paging Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="loremIpsum.html" title="Lorem Ipsum Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pchart-utility">
+<h1>pChart Utility<a class="headerlink" href="#pchart-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pChart">
+<em class="property">class </em><tt class="descname">pChart</tt><a class="headerlink" href="#pChart" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>a PHP class to build charts! <a class="reference external" href="http://pchart.sourceforge.net">http://pchart.sourceforge.net</a>
+released open-source under the GNU Lesser General Public License version 2
+see &lt;<a class="reference external" href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Jean-Damien / POGOLOTTI</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">2008 Jean-Damien POGOLOTTI</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">1.27d (09/30/08)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">utils.pCharts</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="attr">
+<dt id="pChart::$$Palette">
+<em class="property">property </em><tt class="descname">$Palette</tt><a class="headerlink" href="#pChart::$$Palette" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$XSize">
+<em class="property">property </em><tt class="descname">$XSize</tt><a class="headerlink" href="#pChart::$$XSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$YSize">
+<em class="property">property </em><tt class="descname">$YSize</tt><a class="headerlink" href="#pChart::$$YSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$Picture">
+<em class="property">property </em><tt class="descname">$Picture</tt><a class="headerlink" href="#pChart::$$Picture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ImageMap">
+<em class="property">property </em><tt class="descname">$ImageMap</tt><a class="headerlink" href="#pChart::$$ImageMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ErrorReporting">
+<em class="property">property </em><tt class="descname">$ErrorReporting</tt><a class="headerlink" href="#pChart::$$ErrorReporting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ErrorInterface">
+<em class="property">property </em><tt class="descname">$ErrorInterface</tt><a class="headerlink" href="#pChart::$$ErrorInterface" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$Errors">
+<em class="property">property </em><tt class="descname">$Errors</tt><a class="headerlink" href="#pChart::$$Errors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ErrorFontName">
+<em class="property">property </em><tt class="descname">$ErrorFontName</tt><a class="headerlink" href="#pChart::$$ErrorFontName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ErrorFontSize">
+<em class="property">property </em><tt class="descname">$ErrorFontSize</tt><a class="headerlink" href="#pChart::$$ErrorFontSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$GArea_X1">
+<em class="property">property </em><tt class="descname">$GArea_X1</tt><a class="headerlink" href="#pChart::$$GArea_X1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$GArea_Y1">
+<em class="property">property </em><tt class="descname">$GArea_Y1</tt><a class="headerlink" href="#pChart::$$GArea_Y1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$GArea_X2">
+<em class="property">property </em><tt class="descname">$GArea_X2</tt><a class="headerlink" href="#pChart::$$GArea_X2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$GArea_Y2">
+<em class="property">property </em><tt class="descname">$GArea_Y2</tt><a class="headerlink" href="#pChart::$$GArea_Y2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$GAreaXOffset">
+<em class="property">property </em><tt class="descname">$GAreaXOffset</tt><a class="headerlink" href="#pChart::$$GAreaXOffset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$VMax">
+<em class="property">property </em><tt class="descname">$VMax</tt><a class="headerlink" href="#pChart::$$VMax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$VMin">
+<em class="property">property </em><tt class="descname">$VMin</tt><a class="headerlink" href="#pChart::$$VMin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$VXMax">
+<em class="property">property </em><tt class="descname">$VXMax</tt><a class="headerlink" href="#pChart::$$VXMax" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$VXMin">
+<em class="property">property </em><tt class="descname">$VXMin</tt><a class="headerlink" href="#pChart::$$VXMin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$Divisions">
+<em class="property">property </em><tt class="descname">$Divisions</tt><a class="headerlink" href="#pChart::$$Divisions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$XDivisions">
+<em class="property">property </em><tt class="descname">$XDivisions</tt><a class="headerlink" href="#pChart::$$XDivisions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$DivisionHeight">
+<em class="property">property </em><tt class="descname">$DivisionHeight</tt><a class="headerlink" href="#pChart::$$DivisionHeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$XDivisionHeight">
+<em class="property">property </em><tt class="descname">$XDivisionHeight</tt><a class="headerlink" href="#pChart::$$XDivisionHeight" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$DivisionCount">
+<em class="property">property </em><tt class="descname">$DivisionCount</tt><a class="headerlink" href="#pChart::$$DivisionCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$XDivisionCount">
+<em class="property">property </em><tt class="descname">$XDivisionCount</tt><a class="headerlink" href="#pChart::$$XDivisionCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$DivisionRatio">
+<em class="property">property </em><tt class="descname">$DivisionRatio</tt><a class="headerlink" href="#pChart::$$DivisionRatio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$XDivisionRatio">
+<em class="property">property </em><tt class="descname">$XDivisionRatio</tt><a class="headerlink" href="#pChart::$$XDivisionRatio" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$DivisionWidth">
+<em class="property">property </em><tt class="descname">$DivisionWidth</tt><a class="headerlink" href="#pChart::$$DivisionWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$DataCount">
+<em class="property">property </em><tt class="descname">$DataCount</tt><a class="headerlink" href="#pChart::$$DataCount" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$Currency">
+<em class="property">property </em><tt class="descname">$Currency</tt><a class="headerlink" href="#pChart::$$Currency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$FontName">
+<em class="property">property </em><tt class="descname">$FontName</tt><a class="headerlink" href="#pChart::$$FontName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$FontSize">
+<em class="property">property </em><tt class="descname">$FontSize</tt><a class="headerlink" href="#pChart::$$FontSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$DateFormat">
+<em class="property">property </em><tt class="descname">$DateFormat</tt><a class="headerlink" href="#pChart::$$DateFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$LineWidth">
+<em class="property">property </em><tt class="descname">$LineWidth</tt><a class="headerlink" href="#pChart::$$LineWidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$LineDotSize">
+<em class="property">property </em><tt class="descname">$LineDotSize</tt><a class="headerlink" href="#pChart::$$LineDotSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$Layers">
+<em class="property">property </em><tt class="descname">$Layers</tt><a class="headerlink" href="#pChart::$$Layers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$AntialiasQuality">
+<em class="property">property </em><tt class="descname">$AntialiasQuality</tt><a class="headerlink" href="#pChart::$$AntialiasQuality" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowActive">
+<em class="property">property </em><tt class="descname">$ShadowActive</tt><a class="headerlink" href="#pChart::$$ShadowActive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowXDistance">
+<em class="property">property </em><tt class="descname">$ShadowXDistance</tt><a class="headerlink" href="#pChart::$$ShadowXDistance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowYDistance">
+<em class="property">property </em><tt class="descname">$ShadowYDistance</tt><a class="headerlink" href="#pChart::$$ShadowYDistance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowRColor">
+<em class="property">property </em><tt class="descname">$ShadowRColor</tt><a class="headerlink" href="#pChart::$$ShadowRColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowGColor">
+<em class="property">property </em><tt class="descname">$ShadowGColor</tt><a class="headerlink" href="#pChart::$$ShadowGColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowBColor">
+<em class="property">property </em><tt class="descname">$ShadowBColor</tt><a class="headerlink" href="#pChart::$$ShadowBColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowAlpha">
+<em class="property">property </em><tt class="descname">$ShadowAlpha</tt><a class="headerlink" href="#pChart::$$ShadowAlpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$ShadowBlur">
+<em class="property">property </em><tt class="descname">$ShadowBlur</tt><a class="headerlink" href="#pChart::$$ShadowBlur" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$BuildMap">
+<em class="property">property </em><tt class="descname">$BuildMap</tt><a class="headerlink" href="#pChart::$$BuildMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$MapFunction">
+<em class="property">property </em><tt class="descname">$MapFunction</tt><a class="headerlink" href="#pChart::$$MapFunction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$tmpFolder">
+<em class="property">property </em><tt class="descname">$tmpFolder</tt><a class="headerlink" href="#pChart::$$tmpFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pChart::$$MapID">
+<em class="property">property </em><tt class="descname">$MapID</tt><a class="headerlink" href="#pChart::$$MapID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::makepChart">
+<tt class="descname">makepChart</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::makepChart" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::reportWarnings">
+<tt class="descname">reportWarnings</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::reportWarnings" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setFontProperties">
+<tt class="descname">setFontProperties</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setFontProperties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setShadowProperties">
+<tt class="descname">setShadowProperties</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setShadowProperties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::clearShadow">
+<tt class="descname">clearShadow</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::clearShadow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setColorPalette">
+<tt class="descname">setColorPalette</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setColorPalette" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::createColorGradientPalette">
+<tt class="descname">createColorGradientPalette</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::createColorGradientPalette" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::loadColorPalette">
+<tt class="descname">loadColorPalette</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::loadColorPalette" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setLineStyle">
+<tt class="descname">setLineStyle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setLineStyle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setCurrency">
+<tt class="descname">setCurrency</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setCurrency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setGraphArea">
+<tt class="descname">setGraphArea</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setGraphArea" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawGraphArea">
+<tt class="descname">drawGraphArea</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawGraphArea" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::clearScale">
+<tt class="descname">clearScale</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::clearScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setFixedScale">
+<tt class="descname">setFixedScale</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setFixedScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawRightScale">
+<tt class="descname">drawRightScale</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawRightScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawScale">
+<tt class="descname">drawScale</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawXYScale">
+<tt class="descname">drawXYScale</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawXYScale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawGrid">
+<tt class="descname">drawGrid</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawGrid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::getLegendBoxSize">
+<tt class="descname">getLegendBoxSize</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::getLegendBoxSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawLegend">
+<tt class="descname">drawLegend</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawLegend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawPieLegend">
+<tt class="descname">drawPieLegend</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawPieLegend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawTitle">
+<tt class="descname">drawTitle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawTitle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawTextBox">
+<tt class="descname">drawTextBox</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawTextBox" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawTreshold">
+<tt class="descname">drawTreshold</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawTreshold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setLabel">
+<tt class="descname">setLabel</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setLabel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawPlotGraph">
+<tt class="descname">drawPlotGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawPlotGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawXYPlotGraph">
+<tt class="descname">drawXYPlotGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawXYPlotGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawArea">
+<tt class="descname">drawArea</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawArea" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::writeValues">
+<tt class="descname">writeValues</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::writeValues" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawLineGraph">
+<tt class="descname">drawLineGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawLineGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawXYGraph">
+<tt class="descname">drawXYGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawXYGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawCubicCurve">
+<tt class="descname">drawCubicCurve</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawCubicCurve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledCubicCurve">
+<tt class="descname">drawFilledCubicCurve</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledCubicCurve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledLineGraph">
+<tt class="descname">drawFilledLineGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledLineGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawOverlayBarGraph">
+<tt class="descname">drawOverlayBarGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawOverlayBarGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawBarGraph">
+<tt class="descname">drawBarGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawBarGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawStackedBarGraph">
+<tt class="descname">drawStackedBarGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawStackedBarGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawLimitsGraph">
+<tt class="descname">drawLimitsGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawLimitsGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawRadarAxis">
+<tt class="descname">drawRadarAxis</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawRadarAxis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawRadar">
+<tt class="descname">drawRadar</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawRadar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledRadar">
+<tt class="descname">drawFilledRadar</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledRadar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawBasicPieGraph">
+<tt class="descname">drawBasicPieGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawBasicPieGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFlatPieGraphWithShadow">
+<tt class="descname">drawFlatPieGraphWithShadow</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFlatPieGraphWithShadow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFlatPieGraph">
+<tt class="descname">drawFlatPieGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFlatPieGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawPieGraph">
+<tt class="descname">drawPieGraph</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawPieGraph" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawBackground">
+<tt class="descname">drawBackground</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawBackground" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawGraphAreaGradient">
+<tt class="descname">drawGraphAreaGradient</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawGraphAreaGradient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawRectangle">
+<tt class="descname">drawRectangle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawRectangle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledRectangle">
+<tt class="descname">drawFilledRectangle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledRectangle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawRoundedRectangle">
+<tt class="descname">drawRoundedRectangle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawRoundedRectangle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledRoundedRectangle">
+<tt class="descname">drawFilledRoundedRectangle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledRoundedRectangle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawCircle">
+<tt class="descname">drawCircle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawCircle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledCircle">
+<tt class="descname">drawFilledCircle</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledCircle" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawEllipse">
+<tt class="descname">drawEllipse</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawEllipse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFilledEllipse">
+<tt class="descname">drawFilledEllipse</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFilledEllipse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawLine">
+<tt class="descname">drawLine</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawLine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawDottedLine">
+<tt class="descname">drawDottedLine</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawDottedLine" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFromPNG">
+<tt class="descname">drawFromPNG</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFromPNG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFromGIF">
+<tt class="descname">drawFromGIF</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFromGIF" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFromJPG">
+<tt class="descname">drawFromJPG</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFromJPG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawFromPicture">
+<tt class="descname">drawFromPicture</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawFromPicture" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawAlphaPixel">
+<tt class="descname">drawAlphaPixel</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawAlphaPixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::AllocateColor">
+<tt class="descname">AllocateColor</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::AllocateColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::addBorder">
+<tt class="descname">addBorder</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::addBorder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::Render">
+<tt class="descname">Render</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::Render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::Stroke">
+<tt class="descname">Stroke</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::Stroke" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::drawAntialiasPixel">
+<tt class="descname">drawAntialiasPixel</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::drawAntialiasPixel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::validateDataDescription">
+<tt class="descname">validateDataDescription</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::validateDataDescription" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::validateData">
+<tt class="descname">validateData</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::validateData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::printErrors">
+<tt class="descname">printErrors</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::printErrors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setImageMap">
+<tt class="descname">setImageMap</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setImageMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::addToImageMap">
+<tt class="descname">addToImageMap</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::addToImageMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::getImageMap">
+<tt class="descname">getImageMap</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::getImageMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::SaveImageMap">
+<tt class="descname">SaveImageMap</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::SaveImageMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::ToTime">
+<tt class="descname">ToTime</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::ToTime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::ToMetric">
+<tt class="descname">ToMetric</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::ToMetric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::ToCurrency">
+<tt class="descname">ToCurrency</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::ToCurrency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::setDateFormat">
+<tt class="descname">setDateFormat</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::setDateFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::ToDate">
+<tt class="descname">ToDate</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::ToDate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pChart::isRealInt">
+<tt class="descname">isRealInt</tt><big>(</big><big>)</big><a class="headerlink" href="#pChart::isRealInt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="RaiseFatal">
+<tt class="descname">RaiseFatal</tt><big>(</big><big>)</big><a class="headerlink" href="#RaiseFatal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="pData">
+<em class="property">class </em><tt class="descname">pData</tt><a class="headerlink" href="#pData" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="pData::$$Data">
+<em class="property">property </em><tt class="descname">$Data</tt><a class="headerlink" href="#pData::$$Data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="pData::$$DataDescription">
+<em class="property">property </em><tt class="descname">$DataDescription</tt><a class="headerlink" href="#pData::$$DataDescription" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::pData">
+<tt class="descname">pData</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::pData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::ImportFromCSV">
+<tt class="descname">ImportFromCSV</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::ImportFromCSV" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::AddPoint">
+<tt class="descname">AddPoint</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::AddPoint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::AddSerie">
+<tt class="descname">AddSerie</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::AddSerie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::AddAllSeries">
+<tt class="descname">AddAllSeries</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::AddAllSeries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::RemoveSerie">
+<tt class="descname">RemoveSerie</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::RemoveSerie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetAbsciseLabelSerie">
+<tt class="descname">SetAbsciseLabelSerie</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetAbsciseLabelSerie" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetSerieName">
+<tt class="descname">SetSerieName</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetSerieName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetXAxisName">
+<tt class="descname">SetXAxisName</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetXAxisName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetYAxisName">
+<tt class="descname">SetYAxisName</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetYAxisName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetXAxisFormat">
+<tt class="descname">SetXAxisFormat</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetXAxisFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetYAxisFormat">
+<tt class="descname">SetYAxisFormat</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetYAxisFormat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetXAxisUnit">
+<tt class="descname">SetXAxisUnit</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetXAxisUnit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetYAxisUnit">
+<tt class="descname">SetYAxisUnit</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetYAxisUnit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::SetSerieSymbol">
+<tt class="descname">SetSerieSymbol</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::SetSerieSymbol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::removeSerieName">
+<tt class="descname">removeSerieName</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::removeSerieName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::removeAllSeries">
+<tt class="descname">removeAllSeries</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::removeAllSeries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::GetData">
+<tt class="descname">GetData</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::GetData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="pData::GetDataDescription">
+<tt class="descname">GetDataDescription</tt><big>(</big><big>)</big><a class="headerlink" href="#pData::GetDataDescription" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="loremIpsum.html"
+                        title="previous chapter">Lorem Ipsum Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="paging.html"
+                        title="next chapter">Paging Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="paging.html" title="Paging Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="loremIpsum.html" title="Lorem Ipsum Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

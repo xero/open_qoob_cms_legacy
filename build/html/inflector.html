@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Inflector Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Lorem Ipsum Utility" href="loremIpsum.html" />
+    <link rel="prev" title="Hash Utility" href="hash.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="loremIpsum.html" title="Lorem Ipsum Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="hash.html" title="Hash Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="inflector-utility">
+<h1>Inflector Utility<a class="headerlink" href="#inflector-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="inflector">
+<em class="property">class </em><tt class="descname">inflector</tt><a class="headerlink" href="#inflector" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>inflector class
+functions for formatting string into diffrent nomeclatures.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">3.2</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">utils</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="inflector::camelize">
+<tt class="descname">camelize</tt><big>(</big><big>)</big><a class="headerlink" href="#inflector::camelize" title="Permalink to this definition">¶</a></dt>
+<dd><p>the camelize function takes a space &#8221; &#8221; or underscore &#8220;_&#8221;
+delimited string and returns a CamelCase string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Static :</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example :</th><td class="field-body"><p class="first">&#8220;open qoob framework&#8221; = &#8220;OpenQoobFramework&#8221;</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example :</th><td class="field-body"><p class="first">&#8220;o_p_e_n q_o_o_b&#8221; = &#8220;OPENQOOB&#8221;</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$str</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="inflector::underscore">
+<tt class="descname">underscore</tt><big>(</big><big>)</big><a class="headerlink" href="#inflector::underscore" title="Permalink to this definition">¶</a></dt>
+<dd><p>the underscore function takes a space &#8221; &#8221; delimited
+or CamelCase strings and returns a <em>lowercase</em>
+undercore &#8220;_&#8221; delimited string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Static :</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example :</th><td class="field-body"><p class="first">&#8220;open qoob framework&#8221; = &#8220;open_qoob_framework&#8221;</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example :</th><td class="field-body"><p class="first">&#8220;CamelSyntaxIsAwesome&#8221; = &#8220;camel_syntax_is_awesome&#8221;</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$str</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="inflector::humanize">
+<tt class="descname">humanize</tt><big>(</big><big>)</big><a class="headerlink" href="#inflector::humanize" title="Permalink to this definition">¶</a></dt>
+<dd><p>the humanize function takes an underscore &#8220;_&#8221; delimited
+string and returns a space &#8221; &#8221; delimited string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example :</th><td class="field-body"><p class="first">&#8220;open_qoob_framework&#8221; = &#8220;open qoob framework&#8221;</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$str</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="inflector::clean">
+<tt class="descname">clean</tt><big>(</big><big>)</big><a class="headerlink" href="#inflector::clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>a function to remove all characters besides
+letters, numbers, underscores, and hyphens.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example :</th><td class="field-body"><p class="first">&#8220;o!p&#64;e#n$ $q^o~o*b&#8221; = &#8220;open qoob&#8221;</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$str</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="inflector::ordinalize">
+<tt class="descname">ordinalize</tt><big>(</big><big>)</big><a class="headerlink" href="#inflector::ordinalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>ordinalize function
+converts a number to its english ordinal form.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example :</th><td class="field-body"><p class="first">1 = 1st</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example :</th><td class="field-body"><p class="first">13 = 13th</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$number</strong> (<em>integer</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="hash.html"
+                        title="previous chapter">Hash Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="loremIpsum.html"
+                        title="next chapter">Lorem Ipsum Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="loremIpsum.html" title="Lorem Ipsum Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="hash.html" title="Hash Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Registry Core Class &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Session Core Class" href="session.html" />
+    <link rel="prev" title="QOOB Config Core Class" href="qoob_config.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="session.html" title="Session Core Class"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qoob_config.html" title="QOOB Config Core Class"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="registry-core-class">
+<h1>Registry Core Class<a class="headerlink" href="#registry-core-class" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="registry">
+<em class="property">class </em><tt class="descname">registry</tt><a class="headerlink" href="#registry" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>global registry class
+passing a string name to the static register function will
+first check the previous existance of a class. if found
+it&#8217;s instance is returned. otherwise, it will check if
+the class exists in the core classes folder, the core
+utilities folder, or the application controllers folder.
+if found, an instance of the class will be created,
+added to the object registry, then returned. if the db
+boolean is passed the database singleton is returned.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">2.01</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">core.mvc</td>
+</tr>
+<tr class="field-even field"><th class="field-name">example:</th><td class="field-body">registry::register(qoob_types::utility, $xbd&#8217;);</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="registry::register">
+<tt class="descname">register</tt><big>(</big><big>)</big><a class="headerlink" href="#registry::register" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="qoob_types">
+<em class="property">class </em><tt class="descname">qoob_types</tt><a class="headerlink" href="#qoob_types" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>qoob class types</p>
+<p>used by the register function for correct import locations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">1.0</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">core.mvc</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="const">
+<dt>
+<tt class="descname">qoob_types:: application = &quot;app&quot;;</tt></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">application</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">qoob_types:: core = &quot;core&quot;;</tt></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">core</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">qoob_types:: utility = &quot;util&quot;;</tt></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">utility</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">qoob_types:: controller = &quot;controller&quot;;</tt></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Var :</th><td class="field-body">controller</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qoob_config.html"
+                        title="previous chapter">QOOB Config Core Class</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="session.html"
+                        title="next chapter">Session Core Class</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="session.html" title="Session Core Class"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qoob_config.html" title="QOOB Config Core Class"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

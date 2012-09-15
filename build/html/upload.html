@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Upload Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="XBD (Extended Browser Data) Utility" href="xbd.html" />
+    <link rel="prev" title="Syndication Utility" href="syndication.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="xbd.html" title="XBD (Extended Browser Data) Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="syndication.html" title="Syndication Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="upload-utility">
+<h1>Upload Utility<a class="headerlink" href="#upload-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="upload">
+<em class="property">class </em><tt class="descname">upload</tt><a class="headerlink" href="#upload" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>upload manager
+a custom class to help manage file uploads for the site</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">1.4</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">utils</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="upload::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+set&#8217;s the default directory</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::setDirectory">
+<tt class="descname">setDirectory</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::setDirectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>setter method for for the upload directory
+the $location variable is always a subfolder
+under the QOOB_ROOT/uploads directory, unless
+the keyword &#8220;root&#8221; is passed. then the directory
+is set to the root for the uploads folder.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$location</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::getDirectory">
+<tt class="descname">getDirectory</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::getDirectory" title="Permalink to this definition">¶</a></dt>
+<dd><p>getter method for the upload directory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::getExtention">
+<tt class="descname">getExtention</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::getExtention" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the extention of a given file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; $_FILES[&#8220;file&#8221;][&#8220;name&#8221;]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::testMIME">
+<tt class="descname">testMIME</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::testMIME" title="Permalink to this definition">¶</a></dt>
+<dd><p>tests if a given file&#8217;s type is in the allowed list</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$type</strong> (<em>string</em>) &#8211; $_FILES[&#8220;file&#8221;][&#8220;type&#8221;]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::exists">
+<tt class="descname">exists</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>check to see if a file already exists in the upload directory</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::setMIMES">
+<tt class="descname">setMIMES</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::setMIMES" title="Permalink to this definition">¶</a></dt>
+<dd><p>set allowed file types</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$mimes</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::file">
+<tt class="descname">file</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::file" title="Permalink to this definition">¶</a></dt>
+<dd><p>upload the file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$tmpfile</strong> (<em>string</em>) &#8211; $_FILES[&#8220;file&#8221;][&#8220;tmp_name&#8221;]</li>
+<li><strong>$cleanfilename</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete a file from the server.
+chmod the file to 0666 then unlink it.
+this might be dangerious... use with caution!</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$filename</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="upload::writeFile">
+<tt class="descname">writeFile</tt><big>(</big><big>)</big><a class="headerlink" href="#upload::writeFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>manually write a file to the server.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$filename</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$data</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="syndication.html"
+                        title="previous chapter">Syndication Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="xbd.html"
+                        title="next chapter">XBD (Extended Browser Data) Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="xbd.html" title="XBD (Extended Browser Data) Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="syndication.html" title="Syndication Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

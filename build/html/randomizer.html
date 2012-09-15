@@ -1,0 +1,183 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Randomizer Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Status Codes Utility" href="statusCodes.html" />
+    <link rel="prev" title="QR Code Utility" href="qr.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="statusCodes.html" title="Status Codes Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="qr.html" title="QR Code Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="randomizer-utility">
+<h1>Randomizer Utility<a class="headerlink" href="#randomizer-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="randomizer">
+<em class="property">class </em><tt class="descname">randomizer</tt><a class="headerlink" href="#randomizer" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>randomizer class
+a php pseudo-random number generator (PRNG) using a mersenne twister algorithm</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">8.06</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">subpackage:</th><td class="field-body">utils</td>
+</tr>
+<tr class="field-even field"><th class="field-name">category:</th><td class="field-body">math</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="attr">
+<dt id="randomizer::$$data">
+<em class="property">property </em><tt class="descname">$data</tt><a class="headerlink" href="#randomizer::$$data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::add">
+<tt class="descname">add</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::getData">
+<tt class="descname">getData</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::getData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::optimize">
+<tt class="descname">optimize</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::optimize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::shuffle">
+<tt class="descname">shuffle</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::shuffle" title="Permalink to this definition">¶</a></dt>
+<dd><p>shuffle
+shuffles the array using the Fisher-Yates shuffle.</p>
+<p>D. E. Knuth: The Art of Computer Programming, Volume 2,
+Third edition. Section 3.4.2, Algorithm P, pp 145. Reading:
+Addison-Wesley, 1997. ISBN: 0-201-89684-2.</p>
+<ol class="upperalpha simple" start="18">
+<li><ol class="first upperalpha">
+<li>Fisher and F. Yates: Statistical Tables. London, 1938.</li>
+</ol>
+</li>
+</ol>
+</dd></dl>
+
+<dl class="method">
+<dt id="randomizer::reseed">
+<tt class="descname">reseed</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::reseed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::select">
+<tt class="descname">select</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::select_unique">
+<tt class="descname">select_unique</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::select_unique" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::select_weighted">
+<tt class="descname">select_weighted</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::select_weighted" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="randomizer::select_weighted_unique">
+<tt class="descname">select_weighted_unique</tt><big>(</big><big>)</big><a class="headerlink" href="#randomizer::select_weighted_unique" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="qr.html"
+                        title="previous chapter">QR Code Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="statusCodes.html"
+                        title="next chapter">Status Codes Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="statusCodes.html" title="Status Codes Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="qr.html" title="QR Code Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

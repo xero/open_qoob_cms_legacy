@@ -1,0 +1,1003 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>GIT Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Hash Utility" href="hash.html" />
+    <link rel="prev" title="GeoIP Utility" href="geoip.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="hash.html" title="Hash Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="geoip.html" title="GeoIP Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="git-utility">
+<h1>GIT Utility<a class="headerlink" href="#git-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="sha1_bin">
+<tt class="descname">sha1_bin</tt><big>(</big><big>)</big><a class="headerlink" href="#sha1_bin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Relates :</th><td class="field-body"><p class="first">Git</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Convert a SHA-1 hash from hexadecimal to binary representation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$hex</em>) &#8211; The hash in hexadecimal representation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(string) $he hash in binary representation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="sha1_hex">
+<tt class="descname">sha1_hex</tt><big>(</big><big>)</big><a class="headerlink" href="#sha1_hex" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Relates :</th><td class="field-body"><p class="first">Git</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Convert a SHA-1 hash from binary to hexadecimal representation.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$bin</em>) &#8211; The hash in binary representation.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(string) the hash in hexadecimal representation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="is_ascii">
+<tt class="descname">is_ascii</tt><big>(</big><big>)</big><a class="headerlink" href="#is_ascii" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if blob data is ascii or binary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Relates :</th><td class="field-body"><p class="first">Git</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$blob</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="Git">
+<em class="property">class </em><tt class="descname">Git</tt><a class="headerlink" href="#Git" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Patrik Fimml &lt;<a class="reference external" href="mailto:patrik&#37;&#52;&#48;fimml&#46;at">patrik<span>&#64;</span>fimml<span>&#46;</span>at</a>&gt; <a class="reference external" href="https://github.com/patrikf/glip">https://github.com/patrikf/glip</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">version:</th><td class="field-body">2.03</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subpackage:</th><td class="field-body">utils</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">category:</th><td class="field-body">version control</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="attr">
+<dt id="Git::$$dir">
+<em class="property">property </em><tt class="descname">$dir</tt><a class="headerlink" href="#Git::$$dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Git::$$branches">
+<em class="property">property </em><tt class="descname">$branches</tt><a class="headerlink" href="#Git::$$branches" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_NONE = 0;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_COMMIT = 1;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_TREE = 2;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_BLOB = 3;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_TAG = 4;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_OFS_DELTA = 6;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">Git:: OBJ_REF_DELTA = 7;</tt></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Git::getTypeID">
+<tt class="descname">getTypeID</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::getTypeID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Git::getTypeName">
+<tt class="descname">getTypeName</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::getTypeName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Git::init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Git::readFanout">
+<tt class="descname">readFanout</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::readFanout" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Tries to find $object_name in the fanout table in if at $offset.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">array the range where the object can be located (first possible)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::findPackedObject">
+<tt class="descname">findPackedObject</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::findPackedObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>the byte offset inside it, or NULL if not found</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Try to find an object in a pack.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$object_name</em>) &#8211; name of the object (binary SHA1)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(array) an array consisting of the name of the pack (string) and</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::applyDelta">
+<tt class="descname">applyDelta</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::applyDelta" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Apply the git delta $delta to the byte sequence $base.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$base</em>) &#8211; the delta to apply</li>
+<li><strong>$string)</strong> &#8211; the sequence to patch</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(string) the patched byte sequence</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::unpackObject">
+<tt class="descname">unpackObject</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::unpackObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>binary representation of the object (string)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Unpack an object from a pack.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$resource)</strong> (<em>$pack</em>) &#8211; open .pack file</li>
+<li><strong>$integer)</strong> (<em>$object_offset</em>) &#8211; offset of the object in the pack</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(array) an array consisting of the object data and type</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::getRawObject">
+<tt class="descname">getRawObject</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::getRawObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Throws an exception if the object cannot be found.</p>
+<p>binary representation of the object (string)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Fetch an object in its binary representation by name.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$object_name</em>) &#8211; name of the object (binary SHA1)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(array) an array consisting of the object type (int) and the</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::getObject">
+<tt class="descname">getObject</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::getObject" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Fetch an object in its PHP representation.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$name</em>) &#8211; name of the object (binary SHA1)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(GitObject) the object</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::getTip">
+<tt class="descname">getTip</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::getTip" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Look up a branch.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$branch</em>) &#8211; The branch to look up, defaults to master.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(string) the tip of the branch (binary sha1).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Git::archive">
+<tt class="descname">archive</tt><big>(</big><big>)</big><a class="headerlink" href="#Git::archive" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Compress and export a Git tree</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$compression</em>) &#8211; the export filename w/o extension</li>
+<li><strong>$string)</strong> &#8211; the local directory of the repository</li>
+<li><strong>$string)</strong> &#8211; the SHA1 hash of the tree to export</li>
+<li><strong>$string)</strong> &#8211; the compression type &#8216;tar&#8217; or &#8216;zip&#8217;</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(string) the tip of the branch (binary sha1).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="GitObject">
+<em class="property">class </em><tt class="descname">GitObject</tt><a class="headerlink" href="#GitObject" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="GitObject::$$repo">
+<em class="property">property </em><tt class="descname">$repo</tt><a class="headerlink" href="#GitObject::$$repo" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(Git) the repository this object belongs to.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="GitObject::$$type">
+<em class="property">property </em><tt class="descname">$type</tt><a class="headerlink" href="#GitObject::$$type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="GitObject::$$name">
+<em class="property">property </em><tt class="descname">$name</tt><a class="headerlink" href="#GitObject::$$name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitObject::getName">
+<tt class="descname">getName</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::getName" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Get the object&#8217;s cached SHA-1 hash value.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(string) $he hash value (binary sha1).</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::getType">
+<tt class="descname">getType</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::getType" title="Permalink to this definition">¶</a></dt>
+<dd><p>GIT::OBJ_BLOB.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Get $he object&#8217;s type.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(integer) One of Git::OBJ_COMMIT, Git::OBJ_TREE or GET::OBJ_BLOB</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::create">
+<tt class="descname">create</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::create" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitObject::hash">
+<tt class="descname">hash</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>current type with content $data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Internal function to calculate the hash value of a git object of the</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$data</em>) &#8211; The data to hash.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(string) $he hash value (binary sha1).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Never use this function except from a derived class. Use the
+constructor of a derived class, create() or Git::getObject() instead.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Internal constructor for use from derived classes.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::unserialize">
+<tt class="descname">unserialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::unserialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Note that the types of $this and the serialized object in $data have to
+match.</p>
+<p>it would be stored by git.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Populate this object with values from its string representation.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$string)</strong> (<em>$data</em>) &#8211; The serialized representation of an object, as</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::serialize">
+<tt class="descname">serialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::serialize" title="Permalink to this definition">¶</a></dt>
+<dd><p>stored by git.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Get the string representation of an object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The serialized representation of the object, as it would be</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::rehash">
+<tt class="descname">rehash</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::rehash" title="Permalink to this definition">¶</a></dt>
+<dd><p>You need to call this function after making changes to attributes in
+order to have getName() return the correct hash.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Update $he SHA-1 name of an object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitObject::write">
+<tt class="descname">write</tt><big>(</big><big>)</big><a class="headerlink" href="#GitObject::write" title="Permalink to this definition">¶</a></dt>
+<dd><p>given at creation time.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Write this object in its serialized form to the git repository</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="GitCommit">
+<em class="property">class </em><tt class="descname">GitCommit</tt><a class="headerlink" href="#GitCommit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="GitCommit::$$tree">
+<em class="property">property </em><tt class="descname">$tree</tt><a class="headerlink" href="#GitCommit::$$tree" title="Permalink to this definition">¶</a></dt>
+<dd><p>string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(string) the tree referenced by this commit, as binary sha1</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="GitCommit::$$parents">
+<em class="property">property </em><tt class="descname">$parents</tt><a class="headerlink" href="#GitCommit::$$parents" title="Permalink to this definition">¶</a></dt>
+<dd><p>strings.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(array if string) Parent commits of this commit, as binary sha1</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="GitCommit::$$author">
+<em class="property">property </em><tt class="descname">$author</tt><a class="headerlink" href="#GitCommit::$$author" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(GitCommitStamp) the author of this commit.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="GitCommit::$$committer">
+<em class="property">property </em><tt class="descname">$committer</tt><a class="headerlink" href="#GitCommit::$$committer" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(GitCommitStamp) the committer of this commit.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="GitCommit::$$summary">
+<em class="property">property </em><tt class="descname">$summary</tt><a class="headerlink" href="#GitCommit::$$summary" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(string) commit summary, i.e. the first line of the commit message.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attr">
+<dt id="GitCommit::$$detail">
+<em class="property">property </em><tt class="descname">$detail</tt><a class="headerlink" href="#GitCommit::$$detail" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">(string) everything after the first line of the commit message.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::__construct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::_unserialize">
+<tt class="descname">_unserialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::_unserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::_serialize">
+<tt class="descname">_serialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::_serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::getHistory">
+<tt class="descname">getHistory</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::getHistory" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Get commit history in topological order.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(array $f GitCommit)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::getTree">
+<tt class="descname">getTree</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::getTree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Get the tree referenced by this commit.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The GitTree referenced by this commit.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::find">
+<tt class="descname">find</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::find" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a convenience function calling GitTree::find() on the commit&#8217;s
+tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Copybrief :</th><td class="field-body">GitTree::find()</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Copydetails :</th><td class="field-body">GitTree::find()</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitCommit::treeDiff">
+<tt class="descname">treeDiff</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommit::treeDiff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="GitCommitStamp">
+<em class="property">class </em><tt class="descname">GitCommitStamp</tt><a class="headerlink" href="#GitCommitStamp" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="GitCommitStamp::$$name">
+<em class="property">property </em><tt class="descname">$name</tt><a class="headerlink" href="#GitCommitStamp::$$name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="GitCommitStamp::$$email">
+<em class="property">property </em><tt class="descname">$email</tt><a class="headerlink" href="#GitCommitStamp::$$email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="GitCommitStamp::$$time">
+<em class="property">property </em><tt class="descname">$time</tt><a class="headerlink" href="#GitCommitStamp::$$time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="GitCommitStamp::$$offset">
+<em class="property">property </em><tt class="descname">$offset</tt><a class="headerlink" href="#GitCommitStamp::$$offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitCommitStamp::unserialize">
+<tt class="descname">unserialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommitStamp::unserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitCommitStamp::serialize">
+<tt class="descname">serialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitCommitStamp::serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="GitTreeError">
+<em class="property">class </em><tt class="descname">GitTreeError</tt><a class="headerlink" href="#GitTreeError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="GitTreeInvalidPathError">
+<em class="property">class </em><tt class="descname">GitTreeInvalidPathError</tt><a class="headerlink" href="#GitTreeInvalidPathError" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="GitTree">
+<em class="property">class </em><tt class="descname">GitTree</tt><a class="headerlink" href="#GitTree" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="GitTree::$$nodes">
+<em class="property">property </em><tt class="descname">$nodes</tt><a class="headerlink" href="#GitTree::$$nodes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitTree::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::__construct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitTree::_unserialize">
+<tt class="descname">_unserialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::_unserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitTree::nodecmp">
+<tt class="descname">nodecmp</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::nodecmp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitTree::_serialize">
+<tt class="descname">_serialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::_serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitTree::find">
+<tt class="descname">find</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::find" title="Permalink to this definition">¶</a></dt>
+<dd><p>can happen if you are trying to treat a file like a directory (i.e.</p>
+<p>could be found.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Find the tree or blob at a certain path.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Throws :</th><td class="field-body"><p class="first">GitTreeInvalidPathError the path was found to be invalid. This</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Em :</th><td class="field-body"><p class="first">foo/bar $here &#64;em foo is a file).</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$path</em>) &#8211; The path to look for, relative to this tree.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The GitTree or GitBlob at the specified path, or NULL if none</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitTree::listRecursive">
+<tt class="descname">listRecursive</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::listRecursive" title="Permalink to this definition">¶</a></dt>
+<dd><p>paths relative to the current tree, and the values are SHA-1 names of
+the corresponding blobs in binary representation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">Recursively list the contents of a tree.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">(array mapping string to string) An array where the keys are</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitTree::updateNode">
+<tt class="descname">updateNode</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::updateNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Missing directories in the path will be created automatically.</p>
+<p>cleared, i.e. the tree or blob shall be removed from this path.
+placed at the given path.</p>
+<p>created while updating the specified node. Those need to be written to
+the repository together with the modified tree.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body"><p class="first">Updates a node in this tree.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$string)</strong> (<em>$object</em>) &#8211; Path to the node, relative to this tree.</li>
+<li><strong>$it</strong> (<em>$mode</em>) &#8211; mode to set the node to. 0 if the node shall be</li>
+<li><strong>$string)</strong> &#8211; Binary SHA-1 hash of the object that shall be</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">(array if GitObject) An array of GitObject&#8217;s that were newly</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">GitTree:: TREEDIFF_A = 0x01;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">GitTree:: TREEDIFF_B = 0x02;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">GitTree:: TREEDIFF_REMOVED = self::TREEDIFF_A;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">GitTree:: TREEDIFF_ADDED = self::TREEDIFF_B;</tt></dt>
+<dd></dd></dl>
+
+<dl class="const">
+<dt>
+<tt class="descname">GitTree:: TREEDIFF_CHANGED = 0x03;</tt></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitTree::treeDiff">
+<tt class="descname">treeDiff</tt><big>(</big><big>)</big><a class="headerlink" href="#GitTree::treeDiff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="GitBlob">
+<em class="property">class </em><tt class="descname">GitBlob</tt><a class="headerlink" href="#GitBlob" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="GitBlob::$$data">
+<em class="property">property </em><tt class="descname">$data</tt><a class="headerlink" href="#GitBlob::$$data" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Brief :</th><td class="field-body">The data contained in this blob.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="GitBlob::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#GitBlob::__construct" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitBlob::_unserialize">
+<tt class="descname">_unserialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitBlob::_unserialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="GitBlob::_serialize">
+<tt class="descname">_serialize</tt><big>(</big><big>)</big><a class="headerlink" href="#GitBlob::_serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="Binary">
+<em class="property">class </em><tt class="descname">Binary</tt><a class="headerlink" href="#Binary" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="Binary::uint16">
+<tt class="descname">uint16</tt><big>(</big><big>)</big><a class="headerlink" href="#Binary::uint16" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Binary::uint32">
+<tt class="descname">uint32</tt><big>(</big><big>)</big><a class="headerlink" href="#Binary::uint32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Binary::nuint32">
+<tt class="descname">nuint32</tt><big>(</big><big>)</big><a class="headerlink" href="#Binary::nuint32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Binary::fuint32">
+<tt class="descname">fuint32</tt><big>(</big><big>)</big><a class="headerlink" href="#Binary::fuint32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Binary::nfuint32">
+<tt class="descname">nfuint32</tt><big>(</big><big>)</big><a class="headerlink" href="#Binary::nfuint32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Binary::git_varint">
+<tt class="descname">git_varint</tt><big>(</big><big>)</big><a class="headerlink" href="#Binary::git_varint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="geoip.html"
+                        title="previous chapter">GeoIP Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="hash.html"
+                        title="next chapter">Hash Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="hash.html" title="Hash Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="geoip.html" title="GeoIP Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>AntiHack Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="AntiSpam Utility" href="antispam.html" />
+    <link rel="prev" title="Session Core Class" href="session.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="antispam.html" title="AntiSpam Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="session.html" title="Session Core Class"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="antihack-utility">
+<h1>AntiHack Utility<a class="headerlink" href="#antihack-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="antihack">
+<em class="property">class </em><tt class="descname">antihack</tt><a class="headerlink" href="#antihack" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>antihack
+an advanced attack detection mechanism, providing functions to
+scan incoming data for malicious appearing script fragments.</p>
+<p>detects many variants of XSS, SQL injection, header injection, directory traversal,
+RFE/LFI, DoS and LDAP attacks, and through special conversion algorithms is even
+able to detect heavily obfuscated attacks – this covers several charsets like UTF-7,
+entities of all forms – such as javascript unicode, decimal, and hex-entities as
+well as comment obfuscation, obfuscation through concatenation, shell code and
+many other variants.</p>
+<p>furthermore it is able to detect yet unknown attack patterns with the centrifuge component.
+this component does in depth string analysis and measurement and detects about 85% to 90% of
+all tested vectors given a minimum length of 25 characters.</p>
+<p>antihack is a fork of the PHPIDS (PHP-Intrusion Detection System) by Mario Heiderich
+Copyright (GNU) v3 2008 PHPIDS group (<a class="reference external" href="https://phpids.org">https://phpids.org</a>)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Mario Heiderich</td>
+</tr>
+<tr class="field-even field"><th class="field-name">author:</th><td class="field-body">Christian Matthies</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Lars Strojny</td>
+</tr>
+<tr class="field-even field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">version:</th><td class="field-body">3.6</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">package:</th><td class="field-body">qoob</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subpackage:</th><td class="field-body">utils.ice</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">category:</th><td class="field-body">intrusion countermeasure extensions</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="antihack::__construct">
+<tt class="descname">__construct</tt><big>(</big><big>)</big><a class="headerlink" href="#antihack::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>constructor
+setup defaults and loads the xml filter rules</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="antihack::run">
+<tt class="descname">run</tt><big>(</big><big>)</big><a class="headerlink" href="#antihack::run" title="Permalink to this definition">¶</a></dt>
+<dd><p>run
+test an array of values $request against the PHP-IDS
+rule set. array keys in $ignore will not be tested.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>array</em>) &#8211; values to be tested</li>
+<li><strong>$ignore</strong> (<em>array</em>) &#8211; values to be ignored</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="threat_report">
+<em class="property">class </em><tt class="descname">threat_report</tt><a class="headerlink" href="#threat_report" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>threat report
+an array of information that is returned to the user</div></blockquote>
+<dl class="method">
+<dt id="threat_report::make">
+<tt class="descname">make</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::make" title="Permalink to this definition">¶</a></dt>
+<dd><p>make function
+generate the threat report</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="threat_report::checkImpact">
+<tt class="descname">checkImpact</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::checkImpact" title="Permalink to this definition">¶</a></dt>
+<dd><p>check impact
+return the current impact value</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">int $impact</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="threat_report::setAttacker">
+<tt class="descname">setAttacker</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::setAttacker" title="Permalink to this definition">¶</a></dt>
+<dd><p>set attacker
+info about the attack origin point</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$tring</strong> (<em>$host</em>) &#8211; attackerIP</li>
+<li><strong>$tring</strong> &#8211; attackerHostName default &#8216;unknown&#8217;</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="threat_report::addImpact">
+<tt class="descname">addImpact</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::addImpact" title="Permalink to this definition">¶</a></dt>
+<dd><p>add impact
+increase the attack severity level</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$nt</strong> (<em>$impact</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="threat_report::addTag">
+<tt class="descname">addTag</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::addTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>add tag
+metadata about the attack vector</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$tring</strong> (<em>$tag</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="threat_report::addRule">
+<tt class="descname">addRule</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::addRule" title="Permalink to this definition">¶</a></dt>
+<dd><p>add rule
+the rule that was broken</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$tring</strong> (<em>$rule</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="threat_report::addVector">
+<tt class="descname">addVector</tt><big>(</big><big>)</big><a class="headerlink" href="#threat_report::addVector" title="Permalink to this definition">¶</a></dt>
+<dd><p>the attack vector</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$tring</strong> (<em>$vector</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">live attack code! use at your own risk!</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="session.html"
+                        title="previous chapter">Session Core Class</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="antispam.html"
+                        title="next chapter">AntiSpam Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="antispam.html" title="AntiSpam Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="session.html" title="Session Core Class"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

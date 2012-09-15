@@ -1,0 +1,28 @@
+Pages Controller
+****************
+
+.. php:class:: pages
+
+      pages controller
+      generate pages from the database
+      
+
+      :author: andrew harrison
+
+      :copyright: creative commons - attribution-shareAlike 3.0 unported
+
+      :version: 1.0
+
+      :package: app
+
+      :subpackage: controllers
+
+   .. php:method:: pages::index()
+
+      index function
+      render a page for a given url
+
+   .. php:method:: pages::coderesume()
+
+      code resume
+      load the view and render the page

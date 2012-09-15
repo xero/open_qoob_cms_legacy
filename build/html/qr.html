@@ -1,0 +1,166 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>QR Code Utility &mdash; open qoob cms dox v1.0</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
+    <link rel="next" title="Randomizer Utility" href="randomizer.html" />
+    <link rel="prev" title="Post Utility" href="post.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="randomizer.html" title="Randomizer Utility"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="post.html" title="Post Utility"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="qr-code-utility">
+<h1>QR Code Utility<a class="headerlink" href="#qr-code-utility" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="qr">
+<em class="property">class </em><tt class="descname">qr</tt><a class="headerlink" href="#qr" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>QRcode image generator
+This program outputs a png image of &#8220;QRcode model 2&#8221;.
+This version supports QRcode model2 version 1-40.
+This program requires PHP4.1+ and gd 1.6+.
+based on code by Y.Swetake - <a class="reference external" href="http://www.swetake.com/qr/">http://www.swetake.com/qr/</a></p>
+<div class="highlight-python"><pre>d= data         QR code data.
+e= ECC level    L or M or Q or H   (default M)
+s= module size  (dafault PNG:4 JPEG:8)
+v= version      1-40 or Auto select if you do not set.
+t= image type   J:jpeg image , other: PNG image
+
+d : Data you want to encode to QRcode.
+    A special letter like '%'.space or 8bit letter must be URL-encoded.
+    You cannot omit this parameter.
+
+e : Error correct level
+    You can set 'L','M','Q' or 'H'.
+
+    If unet, 'M' is the default.
+
+s : module size
+    This parameter is no effect in HTML mode.
+    You can set a number more than 1.
+    Image size depends on this parameter.
+
+    If unset, defaults are '4' in PNG mode or '8' in JPEG mode.
+
+v : version
+    You can set 1-40.
+
+    If unset, program automatically selects.
+
+t : image type
+    You can set 'J' or 'P'
+    'J' : jpeg mode.
+    'P' : png mode.
+
+    If unset, PNG mode is the default.</pre>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">author:</th><td class="field-body">Y.Swetake</td>
+</tr>
+<tr class="field-even field"><th class="field-name">author:</th><td class="field-body">andrew harrison</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
+</tr>
+<tr class="field-even field"><th class="field-name">package:</th><td class="field-body">utils</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">2.01</td>
+</tr>
+<tr class="field-even field"><th class="field-name">category:</th><td class="field-body">quick $esponse code</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">example:</th><td class="field-body">$this-&gt;qr-&gt;generate(&#8220;<a class="reference external" href="http://andrew.harrison.nu/">http://andrew.harrison.nu/</a>&#8221;, &#8220;L&#8221;, 3, 5);</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="qr::generate">
+<tt class="descname">generate</tt><big>(</big><big>)</big><a class="headerlink" href="#qr::generate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="post.html"
+                        title="previous chapter">Post Utility</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="randomizer.html"
+                        title="next chapter">Randomizer Utility</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="randomizer.html" title="Randomizer Utility"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="post.html" title="Post Utility"
+             >previous</a> |</li>
+        <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, xero harrison.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
