@@ -1,0 +1,36 @@
+open qoob framework
+*******************
+
+The open qoob is a php mvc framework created to speed up the process of creating dynamic websites.
+
+	                       MM.                                                   
+	                       MNNNN.                                                
+	                       MM...NMN.                                             
+	                       MN......ONN                                           
+	                       MN.......ZN                                           
+	                       MN.......ZN                                           
+	                       MNZ......ZN         MMMMMMM  MMMMMMM  MMMMMMM  MMMMM  
+	                     ,ND."MND...ON         MM   MM  MM   MM  MM  MMM  MM   MM
+	                  ,NNN..NN. "MNDON         MM   MM  MM   MM  MM       MM   MM
+	               ,NNN.......DNN. "ON         MMMMMMM  MMMMMMM  MMMMMMM  MM   MM
+	             NNM..............NNM                   MM                       
+	         ,N N. "NN7........ONN" ,N                  MM                MM     
+	      ,NNNN NNNN."ONN...ZNN" ,NMON                  MM                MM     
+	   ,NNI..ON NO...NN. "NN" ,NN...MN                                    MM     
+	 NN......ON NZ......NN INN......MN         MMMMMMM  MMMMMMM  MMMMMMM  MMMMMMM
+	 N.......ON NZ.......N $N.......MN         MM   MM  MM   MM  MM   MM  MM   MM
+	 N.......ZN N$.......N $N.......MN         MM   MM  MM   MM  MM   MM  MM   MM
+	 N.......MN NN.......N $N.......MN         MMMMMMM  MMMMMMM  MMMMMMM  MMMMMMM
+	 N....NN$"    "NN....N $N....NN",ON.            MM                           
+	 N.NNN"          "N..N $N..N" ,MN...MN.         MM                           
+	 NI"                "N $N" ,NM........"MM.      MM                           
+	                         MM...............MM                                 
+	                          "MMM.........MNM"                                  
+	                             "MMN...NMM"                                     
+	                                "NMM"                                        
+
+this is the first public v1.0 release.
+http://qoob.nu/ will be launching soon.
+checkout the docs branch for the official documentation. 
+
+mirror :: http://code.xero.nu/open_qoob_cms/
