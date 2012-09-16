@@ -7,7 +7,7 @@ Pages Model
       SQL functions for loading pages
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

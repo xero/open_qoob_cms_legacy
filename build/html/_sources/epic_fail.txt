@@ -7,7 +7,7 @@ Epic Fail Core Class
       global error and exception handlers.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

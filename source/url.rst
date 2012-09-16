@@ -7,7 +7,7 @@ URL Controller
       class to mine the url into qoob controllers and actions.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

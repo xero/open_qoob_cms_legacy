@@ -9,7 +9,7 @@ Open QOOB Core Class
       the error handeling and main url routing classes.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

@@ -7,7 +7,7 @@ Inflector Utility
       functions for formatting string into diffrent nomeclatures.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

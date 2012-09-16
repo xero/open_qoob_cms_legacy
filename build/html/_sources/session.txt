@@ -10,7 +10,7 @@ Session Core Class
       used to manipulate session data
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

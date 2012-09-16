@@ -86,13 +86,13 @@ latex_elements = {
 # latex info
 latex_documents = [
   ('index', 'openqoob.tex', u'open qoob cms dox',
-   u'Andrew Harrison', 'manual'),
+   u'xero harrison', 'manual'),
 ]
 
 # man pages
 man_pages = [
     ('index', 'openqoob', u'open qoob cms dox',
-     [u'Andrew Harrison'], 1)
+     [u'xero harrison'], 1)
 ]
 
 # -- Options for Texinfo output ------------------------------------------------

@@ -6,7 +6,7 @@ XBD (Extended Browser Data) Utility
       XBD, Extended Browser Detection
       library to implement browser specific features on web applications or websites.
 
-      extended by andrew harrison for use in the open qoob framework.
+      extended by xero harrison for use in the open qoob framework.
       wrapped into a class, and added ip and hostname lookup.
 
       released open-source under the GNU Lesser General Public License version 3
@@ -15,7 +15,7 @@ XBD (Extended Browser Data) Utility
 
       :author: Guillermo Azurdia https://github.com/nopticon/xbd
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

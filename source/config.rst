@@ -8,7 +8,7 @@ App Config Controller
       run the qoob in the global library (e.g. database connection information).
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

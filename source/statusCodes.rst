@@ -11,7 +11,7 @@ Status Codes Utility
       for coming up with such a cool idea.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

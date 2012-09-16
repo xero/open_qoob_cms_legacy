@@ -5,7 +5,7 @@ Statistics Controller
       stats controller
       class for creating, validating, and saving statistic information. user and browser information is gathered by including a javascript function in the page. that code is generated in the js function.      
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

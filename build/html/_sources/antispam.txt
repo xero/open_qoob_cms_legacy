@@ -24,7 +24,7 @@ AntiSpam Utility
           header("Location: ".QOOB_DOAMIN."thank_you");
         }
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

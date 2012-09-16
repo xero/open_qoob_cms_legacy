@@ -7,7 +7,7 @@ Gallery Controller
       class to render image galleries, but in this case it's my portfolio.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

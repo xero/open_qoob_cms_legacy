@@ -7,7 +7,7 @@ Blog Model
       SQL functions for loading blog information from the database
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

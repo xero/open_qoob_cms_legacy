@@ -7,7 +7,7 @@ Pages Controller
       generate pages from the database
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

@@ -8,7 +8,7 @@ ICE (Intrusion Contermeasure Extensions) Controller
       controller for any/all antihacker code.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

@@ -14,7 +14,7 @@ Registry Core Class
       boolean is passed the database singleton is returned.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 
@@ -35,7 +35,7 @@ Registry Core Class
       used by the register function for correct import locations.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

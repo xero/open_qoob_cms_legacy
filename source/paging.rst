@@ -31,7 +31,7 @@ Paging Utility
       							  "full_tag_close" => "</div>"));
       	$html["body"] .= $this->paging->render();      
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

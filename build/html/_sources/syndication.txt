@@ -7,7 +7,7 @@ Syndication Utility
       for generation of RSS and ATOM feeds
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 
@@ -115,7 +115,7 @@ Syndication Utility
       constants used for feed generation code hinting
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

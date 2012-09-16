@@ -1,9 +1,9 @@
-Pages Controller
-****************
+Search Controller
+*****************
 
-.. php:class:: pages
+.. php:class:: search
 
-      pages controller
+      search controller
       generate pages from the database
       
 
@@ -17,12 +17,8 @@ Pages Controller
 
       :subpackage: controllers
 
-   .. php:method:: pages::index()
+   .. php:method:: search::index()
 
       index function
-      render a page for a given url
-
-   .. php:method:: pages::coderesume()
-
-      code resume
-      load the view and render the page
+      check if your search terms are valid (length, no the default phrase, etc),
+      search the database, and display the results.

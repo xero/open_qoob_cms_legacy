@@ -8,7 +8,7 @@ Post Utility
    trying to force users to use the php filter_var method on all user requests.
    
 
-   :author: andrew harrison
+   :author: xero harrison
 
    :copyright: creative commons - attribution-shareAlike 3.0 unported
 

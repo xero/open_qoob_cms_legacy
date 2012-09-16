@@ -7,7 +7,7 @@ Randomizer Utility
       a php pseudo-random number generator (PRNG) using a mersenne twister algorithm
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

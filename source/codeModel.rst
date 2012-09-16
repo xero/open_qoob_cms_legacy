@@ -7,7 +7,7 @@ Code Model
       SQL functions for loading code information from the database
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

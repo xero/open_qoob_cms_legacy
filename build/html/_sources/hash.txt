@@ -10,7 +10,7 @@ Hash Utility
       the GNU Lesser General Public License version 2.1
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

@@ -7,7 +7,7 @@ GIT Code Controller
       class to visualize the code in git repos
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

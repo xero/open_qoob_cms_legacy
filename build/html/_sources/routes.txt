@@ -7,7 +7,7 @@ Routes Model
       SQL functions for url routing
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

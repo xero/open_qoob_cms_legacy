@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Blog Controller &mdash; open qoob cms dox v1.0</title>
+    <title>Search Controller &mdash; open qoob cms dox v1.0</title>
     
     <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="open qoob cms dox v1.0" href="index.html" />
-    <link rel="next" title="GIT Code Controller" href="code.html" />
-    <link rel="prev" title="open qoob cms dox" href="index.html" /> 
+    <link rel="next" title="Statistics Controller" href="stats.html" />
+    <link rel="prev" title="QR Code Controller" href="qrcode.html" /> 
   </head>
   <body>
     <div class="related">
@@ -37,10 +37,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="code.html" title="GIT Code Controller"
+          <a href="stats.html" title="Statistics Controller"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="open qoob cms dox"
+          <a href="qrcode.html" title="QR Code Controller"
              accesskey="P">previous</a> |</li>
         <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
       </ul>
@@ -51,14 +51,14 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="blog-controller">
-<h1>Blog Controller<a class="headerlink" href="#blog-controller" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="search-controller">
+<h1>Search Controller<a class="headerlink" href="#search-controller" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
-<dt id="blog">
-<em class="property">class </em><tt class="descname">blog</tt><a class="headerlink" href="#blog" title="Permalink to this definition">¶</a></dt>
+<dt id="search">
+<em class="property">class </em><tt class="descname">search</tt><a class="headerlink" href="#search" title="Permalink to this definition">¶</a></dt>
 <dd><blockquote>
-<div><p>blog controller
-generate blog pages.</p>
+<div><p>search controller
+generate pages from the database</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -67,7 +67,7 @@ generate blog pages.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">copyright:</th><td class="field-body">creative commons - attribution-shareAlike 3.0 unported</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">2.14</td>
+<tr class="field-odd field"><th class="field-name">version:</th><td class="field-body">1.0</td>
 </tr>
 <tr class="field-even field"><th class="field-name">package:</th><td class="field-body">app</td>
 </tr>
@@ -77,31 +77,11 @@ generate blog pages.</p>
 </table>
 </div></blockquote>
 <dl class="method">
-<dt id="blog::index">
-<tt class="descname">index</tt><big>(</big><big>)</big><a class="headerlink" href="#blog::index" title="Permalink to this definition">¶</a></dt>
+<dt id="search::index">
+<tt class="descname">index</tt><big>(</big><big>)</big><a class="headerlink" href="#search::index" title="Permalink to this definition">¶</a></dt>
 <dd><p>index function
-load the newest blog posts</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="blog::category">
-<tt class="descname">category</tt><big>(</big><big>)</big><a class="headerlink" href="#blog::category" title="Permalink to this definition">¶</a></dt>
-<dd><p>category function
-load the blog posts by category/subcategory</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="blog::tag">
-<tt class="descname">tag</tt><big>(</big><big>)</big><a class="headerlink" href="#blog::tag" title="Permalink to this definition">¶</a></dt>
-<dd><p>tag function
-load the blog posts by tag</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="blog::post">
-<tt class="descname">post</tt><big>(</big><big>)</big><a class="headerlink" href="#blog::post" title="Permalink to this definition">¶</a></dt>
-<dd><p>post function
-load an individual blog posts</p>
+check if your search terms are valid (length, no the default phrase, etc),
+search the database, and display the results.</p>
 </dd></dl>
 
 </dd></dl>
@@ -115,11 +95,11 @@ load an individual blog posts</p>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
   <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">open qoob cms dox</a></p>
+  <p class="topless"><a href="qrcode.html"
+                        title="previous chapter">QR Code Controller</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="code.html"
-                        title="next chapter">GIT Code Controller</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
+  <p class="topless"><a href="stats.html"
+                        title="next chapter">Statistics Controller</a></p><img src="qoob.png" style="margin: 10px 40px 0px 40px" />
         </div>
       </div>
       <div class="clearer"></div>
@@ -131,10 +111,10 @@ load an individual blog posts</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="code.html" title="GIT Code Controller"
+          <a href="stats.html" title="Statistics Controller"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="open qoob cms dox"
+          <a href="qrcode.html" title="QR Code Controller"
              >previous</a> |</li>
         <li><a href="index.html">open qoob cms dox v1.0</a> &raquo;</li> 
       </ul>

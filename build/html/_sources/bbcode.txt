@@ -8,7 +8,7 @@ BBcode Parser Utility
       based on http://www.phpit.net/article/create-bbcode-php/
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

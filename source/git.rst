@@ -33,7 +33,7 @@ GIT Utility
 
       :author: Patrik Fimml <patrik@fimml.at> https://github.com/patrikf/glip
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

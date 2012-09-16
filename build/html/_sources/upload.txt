@@ -7,7 +7,7 @@ Upload Utility
       a custom class to help manage file uploads for the site
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

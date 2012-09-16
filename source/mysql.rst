@@ -5,7 +5,7 @@ MySQL Core Class
 
       the error messages thrown from the main mysql class
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 
@@ -28,7 +28,7 @@ MySQL Core Class
 
       the main database class (used as a singleton) containing connection variables, open/close routines, query generation/cleaning/execution and auto-id retrieval
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 
@@ -138,7 +138,7 @@ MySQL Core Class
       a class that formats the database results into php arrays.
       result["row_id"]["column_name"]
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

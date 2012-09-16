@@ -7,7 +7,7 @@ Gallery Model
       SQL functions for loading galleries and their images
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 

@@ -7,7 +7,7 @@ URL Decoder Core Class
       create the URL based constants needed for the qoob framework.
       
 
-      :author: andrew harrison
+      :author: xero harrison
 
       :copyright: creative commons - attribution-shareAlike 3.0 unported
 
