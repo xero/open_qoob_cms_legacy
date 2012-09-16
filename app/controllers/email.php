@@ -20,7 +20,7 @@ final class email extends controller {
 		$name =  getRequest("txtName", "post", FILTER_SANITIZE_STRING);
 		$from = getRequest("txtEmail", "post", FILTER_SANITIZE_EMAIL);
 		$msg = getRequest("txtMsg", "post", FILTER_SANITIZE_STRING);
-		$header = "From: webform@qoob.nu";
+		$header = "From: qoob@".$_SERVER["HTTP_HOST"];
 
 		//---validate email
 		if (!filter_var($from, FILTER_VALIDATE_EMAIL) ) { 

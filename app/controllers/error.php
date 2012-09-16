@@ -32,7 +32,7 @@ class error extends controller {
 			'content' => library::catalog()->debug ? $body : '',
 			'comments' => 0
 		);
-		$post["content"] .= '<img src="'.BASE_URL.'/style/img/bomb.png" alt="error bomb" /><img src="'.BASE_URL.'/style/img/bomb.png" alt="error bomb" /><img src="'.BASE_URL.'/style/img/bomb.png" alt="error bomb" />';
+		$post["content"] .= '<br/><img src="'.BASE_URL.'/style/img/bomb.png" alt="error bomb" /><img src="'.BASE_URL.'/style/img/bomb.png" alt="error bomb" /><img src="'.BASE_URL.'/style/img/bomb.png" alt="error bomb" />';
 		$html["body"] = $this->view("post", $post, true);
 		$this->view("pixelgraff", $html);
 	}
